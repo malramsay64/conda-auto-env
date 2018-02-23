@@ -53,4 +53,4 @@ function conda_auto_env_remote() {
   fi
 }
 
-export PROMPT_COMMAND=conda_auto_env_remote
+add-zsh-hook precmd conda_auto_env_remote

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # conda-auto-env automatically activates a conda environment when
 # entering a folder with an environment.yml file.
@@ -31,4 +31,4 @@ function conda_auto_env() {
   fi
 }
 
-export PROMPT_COMMAND=conda_auto_env
+add-zsh-hook precmd conda_auto_env
